@@ -19,8 +19,10 @@ def predicao():
   smoothness_mean = request.form['smoothness_mean'] 
   compactness_mean = request.form['compactness_mean']
   concavity_mean = request.form['concavity_mean']
+  symmetry_mean = request.form['symmetry_mean']
 
-  array=[[str(radius_mean),str(texture_mean), str(perimeter_mean), str(area_mean), str (smoothness_mean), str (compactness_mean), str(concavity_mean)]]
+
+  array=[[str(radius_mean),str(texture_mean), str(perimeter_mean), str(area_mean), str (smoothness_mean), str (compactness_mean), str(concavity_mean), str(symmetry_mean)]]
 
   predicao = model.predict([array])
 
