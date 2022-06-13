@@ -22,9 +22,9 @@ def predicao():
   symmetry_mean = request.form['symmetry_mean']
 
 
-  array=[[str(radius_mean),str(texture_mean), str(perimeter_mean), str(area_mean), str (smoothness_mean), str (compactness_mean), str(concavity_mean), str(symmetry_mean)]]
+  array=[[str(radius_mean), str(texture_mean), str(perimeter_mean), str(area_mean), str (smoothness_mean), str (compactness_mean), str(concavity_mean), str(symmetry_mean)]]
 
-  predicao = model.predict([array])
+  predicao = model.predict(array)
 
 
   return render_template('resposta.html', predicao=predicao[0])

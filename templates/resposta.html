@@ -1,12 +1,39 @@
-<!DOCTYPE html>
-<head>
-    <title>Resposta</title>
-</head>
-<body>
-    {% if predicao == 1 %}
-        <div style="color: blue">Cancer Maligno</div>
-    {% else %}
-        <div style="color: red">Cancer Beligno</div>
-    {% endif %}
-</body>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trabalho LP3 - Dezani (Dados Câncer)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        h1{
+            font-size:18px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        h2{
+            font-size:16px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">              
+            </div>
+            <div class="col-6">
+                <h1>RESULTADO TUMORES</h1>
+                {% if predicao == 1 %}
+                    <h2 style="color: blue">Cancer Maligno</h2>
+                {% else %}
+                    <h2 style="color: red">Cancer Beligno</h2>
+                {% endif %}
+            </div>
+            <div class="col-3">              
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
